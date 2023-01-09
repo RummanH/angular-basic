@@ -1,0 +1,4 @@
+<p *ngFor="let product of products">
+    {{product.name}}
+    <button type="button" (click)="notify.emit(product)">Notify Me</button>
+</p>
