@@ -1,4 +1,7 @@
 <p *ngFor="let product of products">
     {{product.name}}
     <button type="button" (click)="notify.emit(product)">Notify Me</button>
+    <a [title]="product.name + ' details'" [routerLink]="['/products', product.id]">
+        {{ product.name }}
+    </a>
 </p>
