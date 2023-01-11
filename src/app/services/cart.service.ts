@@ -6,7 +6,6 @@ import { HttpClient } from '@angular/common/http'
 })
 export class CartService {
   items: any[] = []
-
   constructor(private http: HttpClient) { }
 
   addToCart(product:any) {

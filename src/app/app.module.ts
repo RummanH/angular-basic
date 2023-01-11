@@ -9,7 +9,9 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { CartComponent } from './components/cart/cart.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ShippingComponent } from './components/shipping/shipping.component'
+import { ShippingComponent } from './components/shipping/shipping.component';
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,10 @@ import { ShippingComponent } from './components/shipping/shipping.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
